@@ -1,0 +1,38 @@
+.App {
+  max-width: 1230px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0px;
+  box-shadow: 0 0 35px #eee;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: rgb(162, 220, 220);
+  width: 200px;
+  height: 40px;
+  font-size: 120%;
+  font-family: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgb(145, 237, 237);
+}
+
+.button {
+  background: rgb(162, 220, 220);
+  border-width: 1;
+  width: 200px;
+  height: 40px;
+  font-size: 100%;
+  font-family: inherit;
+}

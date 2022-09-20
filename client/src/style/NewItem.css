@@ -1,0 +1,51 @@
+.label {
+  align-items: center;
+  justify-content: center;
+}
+.new-item {
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 150%;
+  align-items: center;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 4px;
+}
+
+.input {
+  border: 2px solid black;
+  font-size: 130%;
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  border: 2px solid black;
+  font-size: 120%;
+  height: 200px;
+  width: 400px;
+  border-radius: 5px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 550px) {
+  .new-item {
+    width: 98%;
+  }
+  .input {
+    width: 98%;
+  }
+  .textarea {
+    width: 98%;
+  }
+}

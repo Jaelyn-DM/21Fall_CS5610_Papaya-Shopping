@@ -1,0 +1,39 @@
+.item-preview-cart {
+  display: grid;
+  padding: 0px;
+  margin: 10px;
+  row-gap: 60px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.add-sub {
+  border-width: 1;
+  border-radius: 30%;
+  width: 40px;
+  height: 40px;
+
+}
+
+.add {
+  background-color: rgb(139, 149, 176);
+}
+
+.add:hover {
+  background-color: rgb(200, 212, 242);
+}
+
+.sub {
+  background-color: rgb(109, 59, 59);
+}
+
+.sub:hover {
+  background-color: rgb(191, 107, 107);
+}
+
+.remove {
+  border-width: 1;
+  border-radius: 15%;
+  width: 100px;
+  height: 40px;
+}

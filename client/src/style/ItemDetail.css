@@ -1,0 +1,20 @@
+.item-detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 150%;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 550) {
+  .App {
+    box-shadow: none;
+  }
+}
+@media (max-width: 800px) {
+  .App {
+    box-shadow: none;
+  }
+}

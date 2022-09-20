@@ -1,0 +1,65 @@
+
+
+// model Category {
+//   id   Int     @id @default(autoincrement())
+//   name String?
+//   item Item[]
+// }
+
+
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id      Int     @id @default(autoincrement())
+  auth0Id String? @unique @default("")
+  name    String? @unique
+  email   String?
+
+  // cart Cart
+  // cartId Int
+
+  // Cart Cart[]
+}
+
+model Cart {
+  id     Int @id @default(autoincrement())
+  // user User @relation(fields: [userId], references: [id])
+  // cartItems CartItem[]
+  userId Int @unique
+}
+
+model CartItem {
+  id     Int @id @default(autoincrement())
+  cartId Int
+
+}
+
+model Item {
+  id         Int      @id @default(autoincrement())
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId Int @unique
+
+  // userId      Int
+  createTime  DateTime @default(now())
+  editTime    DateTime @updatedAt
+  title       String   @db.VarChar(255)
+  price       Int
+  image       String?
+  description String?
+}
+
+model Category {
+  id   Int     @id @default(autoincrement())
+  name String?
+  item Item[]
+}

@@ -1,0 +1,37 @@
+.item-preview-list-home {
+  display: grid;
+  padding: 0px;
+  margin: 10px;
+  row-gap: 60px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.item-title {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #323232;
+}
+
+.item-price {
+  color: #dc143c;
+}
+
+.add-to-cart {
+  margin-left: 5px;
+}
+
+@media (max-width: 800px) {
+  .item-preview-list-home {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .item-preview-list-home {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

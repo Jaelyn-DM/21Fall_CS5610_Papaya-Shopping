@@ -1,0 +1,28 @@
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  color: rgb(35, 35, 35);
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  opacity: 0.7;
+  padding: 0 20px;
+}
+.navbar ul li:hover {
+  opacity: 1;
+
+  background-color: darkslategray;
+}
